@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEO DATA SUBANG</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easybutton.css">
+<link href='https://api.mapbox.com/mapbox.js/plugins/leafletfullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+<link rel="stylesheet" href="https://balladaniel.github.io/leaflet-dataclassification/leafletdataclassification.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-
+20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+<script src='https://api.mapbox.com/mapbox.js/plugins/leafletfullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js"
+charset="utf-8"></script>
+<script src="https://balladaniel.github.io/leaflet-dataclassification/leafletdataclassification.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<!-- Leaflet Fullscreen Plugin CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet.fullscreen/Control.FullScreen.css" />
+
+<!-- Leaflet Locate Control CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+</head>
+
+<body>
+    <header id="navbar"> 
+        <div class="container"> 
+            <div class="logo"> 
+                <img src="asset/logo-removebg-preview (1).png" alt="Logo" width="100"> 
+                <h1>GEO DATA SUBANG</h1> 
+            </div> 
+            <nav> 
+                <ul> 
+                    <li><a href="#hero-section">Home</a></li> 
+                    <li><a href="#map-section">Map</a></li> 
+                    <li><a href="#data-section">Data</a></li> 
+                    <li><a href="#author-section">Author</a></li> 
+                    <li><a href="#footer">Contact</a></li> 
+                </ul> 
+            </nav> 
+        </div> 
+    </header> 
+    <div id="hero-section" class="hero-section"> 
+        <div class="hero-content"> 
+            <h1>PERSEBARAN TPS DAN TPA DI KABUPATEN SUBANG</h1> 
+            <p>Halaman untuk Melakukan Eksplorasi Persebaran TPS dan TPA di Kabupaten Subang</p> 
+        </div> 
+    </div> 
+    <div id="map-section"> 
+        <h2>Jelajahi Persebaran TPS dan TPA di Kabupaten Subang <h2> 
+        <div id="map"> 
+            <!-- akan muncul peta disini --> 
+        </div> 
+    </div> 
+    <div id="data-section"> 
+        <h2>Data Tersedia</h2> 
+        <div class="container"> 
+            <div class="column"> 
+                <div class="data-item"> 
+                    <img src="asset/garbage-17541.jpg" alt="Image 1"> 
+                    <div class="description"> 
+                        <h3>Data 1</h3> 
+                        <p>TPA JALUPANG</p>
+                        <p>Desa Jalupang, Kec. Kalijati, Kab. Subang</p>
+                        <p>TPA Jalupang terletak di Desa Jalupang, Kecamatan Kalijati, Kabupaten Subang, dan berfungsi sebagai tempat utama pembuangan sampah domestik dan industri. Saat ini, pengelolaan masih menggunakan sistem open dumping yang menimbulkan masalah lingkungan seperti bau, polusi, dan akses jalan yang rusak. Pemerintah Kabupaten Subang berupaya meningkatkan pengelolaan melalui perbaikan infrastruktur dan rencana transisi ke sistem sanitary landfill. Bupati Subang juga telah meninjau langsung lokasi dan berdialog dengan masyarakat untuk mencari solusi bersama demi terciptanya sistem pengelolaan sampah yang efektif dan ramah lingkungan.</p> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="column"> 
+                <div class="data-item"> 
+                    <img src="asset/trash-4897847_1920.jpg" alt="Image 1"> 
+                                        <div class="description"> 
+                                            <h3>Data 2</h3> 
+                                            <p>TPA BANGGALAMULYA</p>
+                                            <p>Desa Banggalamulya, Kec. Kalijati, Kab. Subang</p>
+                                            <p>TPA Banggalamulya terletak di kecamatan Kalijati, Kabupaten Subang. Tempat pembuangan akhir ini direncanakan sebagai bagian dari pembangunan TPA baru di Desa Banggalamulya, Kecamatan Kalijati, yang akan memanfaatkan lahan seluas lebih dari 200 hektar milik PTPN VIII. Proyek ini juga mencakup perbaikan akses jalan agar truk sampah dapat masuk dengan lancar ke lokasi TPA. Kehadiran TPA tersebut diharapkan menjadi solusi terhadap krisis sampah di Kabupaten Subang, dengan dukungan penuh dari pemerintah dan masyarakat daerah dalam penyediaan infrastruktur dan fasilitas pendukung pengelolaan sampah.</p> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                                <div class="column"> 
+                                    <div class="data-item"> 
+                                        <img src="asset/garbage-413757_1920.jpg" alt="Image 1"> 
+                                        <div class="description"> 
+                                            <h3>Data 3</h3> 
+                                            <p>TPS PASAR PAMANUKAN</p>
+                                            <p>Desa Pamanukan Kota, Kec. Pamanukan, Kab. Subang</p>
+                                            <p>TPS (Tempat Pembuangan Sementara) yang terletak di dekat Pasar Pamanukan, Kab. Subang, merupakan fasilitas penampungan awal sampah dari aktivitas pasar dan lingkungan sekitarnya. Terletak awalnya di dekat pemukiman, TPS ini sempat menimbulkan keluhan masyarakat karena bau menyengat dan penumpukan sampah hingga ke pinggir jalan dan seringkali mengganggu kendaraan yang berlelu lalang. Seiring upaya pemerintah daerah, area TPS kemudian dirapikan, dipindahkan ke lokasi yang lebih layak, dan dilengkapi fasilitas pengolahan, seperti wheel loader serta rencana pengembangan pengolahan limbah dan budidaya maggot.</p> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                            <div class="container"> 
+                                <div class="column"> 
+                                    <div class="data-item"> 
+                                        <img src="asset/scrap-166495_1920.jpg" alt="Image 1"> 
+                                        <div class="description"> 
+                                            <h3>Data 1</h3> 
+                                            <p>TPS PAGADEN PLAZA</p>
+                                            <p>Desa Pagaden, Kec. Pagaden, Kab. Subang</p>
+                                            <p>Tempat Pasar Sementara (TPS) di Pagaden Plaza, Kabupaten Subang, hingga Bulan mei tahun 2025 masih menunjukkan kondisi kurang memadai: jalan becek, fasilitas terbatas, dan suasana kumuh setelah hujan turun. Pedagang dan pembeli menyampaikan rasa tidak nyaman, berharap perhatian dari Pemerintah Kabupaten, DPRD, dan instansi terkait. Selain itu, Kecamatan Pagaden untuk saat ini tengah merencanakan pembangunan TPS baru dan pembelian truk pengangkut sampah untuk menangani masalah penumpukan sampah. Upaya ini diharapkan bisa meningkatkan kebersihan dan kenyamanan kawasan Plaza Pagaden di masa mendatang.</p> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                                <div class="column"> 
+                                    <div class="data-item"> 
+                                        <img src="asset/landfill-879437_1920.jpg" alt="Image 1"> 
+                                        <div class="description"> 
+                                            <h3>Data 2</h3> 
+                                            <p>TPS RANCAHILIR</p>
+                                            <p>Desa Rancahilir, Kec. Pamanukan, Kab. Subang</p>
+                                            <p>Di Desa Rancahilir, Kecamatan Pamanukan, Kabupaten Subang, Terdapat sebuah tempat pembuangan sampah sementara yang digunakan untuk pembuanagn limbah masyarakat setempat. TPS tersebut hingga saat ini terus mengalami polemik karena dibangun di lahan milik orang lain, bukan lahan milik pemerintah. Namun, pemerintah desa sudah merencanakan terkait rencana pembangunan untuk TPS yang baru, belum diketahui lokasinya dimana. Tetapi untuk Saat ini, penanganan sampah terus efektif melalui inisiatif pengelolaan lokal dan dukungan pemerintah ketika sampah sudah sedikit penuh maka, akan langsung diangkut ke TPA.</p> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                                 <div class="column"> 
+                                    <div class="data-item"> 
+                                        <img src="asset/disposal-1846033_1920.jpg" alt="Image 1"> 
+                                        <div class="description"> 
+                                            <h3>Data 2</h3> 
+                                            <p>TPS PASAR INPRES PAGADEN</p>
+                                            <p>Desa Kamarung, Kec. Pagaden, Kab. Subang</p>
+                                            <p>Tempat pembuangan sampah sementara (TPS) di Pasar Inpres Pagaden, Kecamatan Pagaden, Kabupaten Subang saat ini kondisinya kurang memadai. Kurangnya kesadaran buang sampah pada tempatnya menyebabkan sampah menumpuk, sementara volume sampah meningkat seiring pertambahan penduduk. Untuk mengatasinya, Pemerintah Kecamatan Pagaden bekerja sama dengan Dinas Lingkungan Hidup Kabupaten Subang berencana membangun TPS baru di Desa Sukamulya, serta rencana menambah armada pengangkut sampah. Upaya ini dilengkapi dengan sosialisasi intensif agar masyarakat lebih peduli terhadap kebersihan.</p> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+    <div id="author-section"> 
+        <div class="author-content"> 
+            <h2>Tentang Pembuat</h2> 
+            <img src="asset/WhatsApp Image 2025-03-27 at 09.46.20_fc3c839c.jpg" alt="Profile Picture" class="profile-picture"> 
+            <div class="author-name"> 
+                <h3>Muhammad Surya Fadilah</h3> 
+            </div> 
+            <p>Seorang Analis Sistem Informasi Geografis (SIG) dengan pengalaman 7 tahun dalam 
+mengerjakan proyek dari pemerintah dan swasta baik dalam pekerjaan proyek maupun pelatihan SIG. 
+Pekerja keras dan rajin dalam bekerja. Saat ini memiliki minat pada SIG, penginderaan jauh, 
+WebGIS, dan SIG untuk mitigasi bencana dan termotivasi untuk terus belajar dan berkembang sebagai 
+analis SIG.</p> 
+        </div>
+        <div id="footer"> 
+            <div class="footer-content"> 
+                <h3>Hubungi Saya</h3> 
+                <p>Email: suryageo13@gmail.com</p> 
+                <p>Phone: 081394688681</p> 
+            </div> 
+        </div> 
+
+ 
+ <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="map.js"></script>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- Fullscreen Plugin JS -->
+<script src="https://unpkg.com/leaflet.fullscreen/Control.FullScreen.js"></script>
+
+<!-- Locate Control JS -->
+<script src="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

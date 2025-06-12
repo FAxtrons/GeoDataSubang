@@ -1,0 +1,275 @@
+/* ============================= */
+/* Umum dan Struktur Dasar      */
+/* ============================= */
+html {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI';
+    caret-color: transparent;
+}
+
+body {
+    font-family: 'Segoe UI';
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================= */
+/* Header dan Navigasi          */
+/* ============================= */
+#navbar {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px #ffffff00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    border-bottom: 2px solid #ffffff00;
+    font-family: 'Segoe UI';
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #585858;
+    text-decoration: none;
+    font-size: 14px; 
+     font-weight: bold; 
+    position: relative;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -7px;
+    width: calc(100% + 14px);
+    height: calc(100% + 14px);
+    background-color: #4ee78e;
+    border-radius: 10px;
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    background-color: #000000;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+/* ============================= */
+/* Hero Section                 */
+/* ============================= */
+.hero-section {
+    margin-top: 60px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e4/Recycling_bins_in_Poland.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 1800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    font-family: 'Segoe UI';
+    color: #000000;
+}
+
+/* ============================= */
+/* Map Section                  */
+/* ============================= */
+#map {
+    width: 95%;
+    height: 800px;
+    background-color: #000000;
+    margin: 40px auto;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#map-section h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+/* ============================= */
+/* Data Section                 */
+/* ============================= */
+#data-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+#data-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    justify-content: flex-start;
+}
+
+#data-section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+    clear: both;
+}
+
+.column {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+}
+
+.data-item {
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: auto 10px;
+}
+
+.data-item img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.description {
+    padding: 20px;
+    height: 500px;
+    font-family: 'Segoe UI';
+}
+
+.description h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.description p {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* ============================= */
+/* Author Section               */
+/* ============================= */
+#author-section {
+    background-color: #E8EBD2;
+    padding: 40px 20px;
+    font-family: 'Segoe UI';
+    text-align: justify;
+}
+
+.author-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.author-content h2 {
+    text-align: center;
+}
+
+.author-name {
+    text-align: center;
+}
+
+.profile-picture {
+    height: 200px;
+    width: auto;
+    border-radius: 150%;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+/* ============================= */
+/* Footer                       */
+/* ============================= */
+#footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI';
+    flex-shrink: 0;
+}
+
+/* ============================= */
+/* Legend (untuk peta)          */
+/* ============================= */
+.legend {
+    padding: 6px 8px;
+    background-color: rgba(255, 255, 255, 0.881);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.legend div {
+    width: 30px;
+    height: 5px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.5;
+}
+
+div.legend.leaflet-control br {
+    clear: both;
+}
